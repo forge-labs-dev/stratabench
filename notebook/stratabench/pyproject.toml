@@ -1,0 +1,23 @@
+[project]
+name = "stratabench-notebook"
+version = "0.1.0"
+description = "stratabench Strata notebook environment"
+requires-python = ">=3.12"
+dependencies = [
+    # Strata-runtime essentials — pyarrow / orjson / cloudpickle let the
+    # cell harness serialize Tables, dicts, and arbitrary objects across
+    # the subprocess boundary without falling back to slower stdlib paths.
+    "pyarrow>=18.0.0",
+    "orjson>=3.10.0",
+    "cloudpickle>=3.0.0",
+    "pandas>=2.0.0",
+    # Eval-side deps — HF datasets for benchmark loaders, jsonschema for
+    # structured-output validation, httpx for direct provider calls when
+    # we don't want the SDK overhead.
+    "httpx>=0.28.0",
+    "datasets>=3.0.0",
+    "jsonschema>=4.20.0",
+    "pydantic>=2.0.0",
+]
+
+[tool.uv]

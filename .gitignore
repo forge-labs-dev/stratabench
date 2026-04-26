@@ -216,3 +216,8 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Strata notebook runtime state — display outputs, console snapshots,
+# per-cell provenance hashes. By design these live out of version control;
+# notebook.toml holds the stable config that does get committed.
+.strata/
