@@ -9,8 +9,15 @@ read the entire spec without chasing imports.
 
 from __future__ import annotations
 
+from stratabench.clients import ChatResponse, chat_completion
 from stratabench.models import REGISTRY, ModelSpec
 from stratabench.result import EvalResult
 
-__all__ = ["REGISTRY", "EvalResult", "ModelSpec"]
+__all__ = [
+    "REGISTRY",
+    "ChatResponse",
+    "EvalResult",
+    "ModelSpec",
+    "chat_completion",
+]
 __version__ = "0.1.0"
