@@ -1,9 +1,12 @@
 [project]
-name = "stratabench-notebook"
+name = "stratabench-notebook-mmlu"
 version = "0.1.0"
-description = "stratabench Strata notebook environment"
+description = "stratabench MMLU-redux Strata notebook environment"
 requires-python = ">=3.12"
 dependencies = [
+    # The shared library — types, registry, HTTP clients. Editable so
+    # registry edits at the repo root land here without a republish.
+    "stratabench",
     # Strata-runtime essentials — pyarrow / orjson / cloudpickle let the
     # cell harness serialize Tables, dicts, and arbitrary objects across
     # the subprocess boundary without falling back to slower stdlib paths.
@@ -21,3 +24,9 @@ dependencies = [
 ]
 
 [tool.uv]
+
+[tool.uv.sources]
+# Pull stratabench from the repo root via editable install. Notebook
+# users running `uv sync` from this directory pick up local edits to
+# src/stratabench/ without a manual reinstall.
+stratabench = { path = "../..", editable = true }
