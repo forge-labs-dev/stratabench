@@ -1,5 +1,5 @@
 # @name Run inference (gpt-4o-mini)
-# @timeout 600
+# @timeout 3600
 #
 # Iterate the formatted prompts and call the model. One call per question,
 # synchronous for v1 — concurrency adds complexity (rate limits, retries,
