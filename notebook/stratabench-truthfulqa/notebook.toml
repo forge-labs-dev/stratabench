@@ -1,0 +1,11 @@
+notebook_id = "stratabench-truthfulqa-001"
+name = "stratabench: TruthfulQA-mc"
+created_at = 2026-04-27T00:00:00+00:00
+updated_at = 2026-04-27T00:00:00+00:00
+cells = [
+    { id = "helpers", file = "helpers.py", language = "python", order = 0 },
+    { id = "dataset", file = "dataset.py", language = "python", order = 1 },
+    { id = "prompts", file = "prompts.py", language = "python", order = 2 },
+    { id = "inference", file = "inference.py", language = "python", order = 3 },
+    { id = "score", file = "score.py", language = "python", order = 4 },
+]
