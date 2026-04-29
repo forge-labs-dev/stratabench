@@ -1,0 +1,20 @@
+[project]
+name = "stratabench-notebook-ifeval"
+version = "0.1.0"
+description = "stratabench IFEval Strata notebook environment"
+requires-python = ">=3.12"
+dependencies = [
+    "stratabench",
+    "pyarrow>=18.0.0",
+    "orjson>=3.10.0",
+    "cloudpickle>=3.0.0",
+    "pandas>=2.0.0",
+    "httpx>=0.28.0",
+    "datasets>=3.0.0",
+    "pydantic>=2.0.0",
+]
+
+[tool.uv]
+
+[tool.uv.sources]
+stratabench = { path = "../..", editable = true }
