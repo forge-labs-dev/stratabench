@@ -11,6 +11,7 @@ from __future__ import annotations
 
 from stratabench.clients import ChatResponse, chat_completion
 from stratabench.models import REGISTRY, ModelSpec
+from stratabench.publish import publish_score
 from stratabench.result import EvalResult
 
 __all__ = [
@@ -19,5 +20,6 @@ __all__ = [
     "EvalResult",
     "ModelSpec",
     "chat_completion",
+    "publish_score",
 ]
 __version__ = "0.1.0"

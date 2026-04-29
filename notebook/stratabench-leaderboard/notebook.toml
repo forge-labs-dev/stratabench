@@ -1,0 +1,9 @@
+notebook_id = "stratabench-leaderboard-001"
+name = "stratabench: Leaderboard"
+created_at = 2026-04-27T00:00:00+00:00
+updated_at = 2026-04-27T00:00:00+00:00
+cells = [
+    { id = "helpers", file = "helpers.py", language = "python", order = 0 },
+    { id = "load_results", file = "load_results.py", language = "python", order = 1 },
+    { id = "leaderboard", file = "leaderboard.py", language = "python", order = 2 },
+]
